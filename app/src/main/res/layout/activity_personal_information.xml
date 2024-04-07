@@ -1,0 +1,114 @@
+<!-- res/layout/activity_personal_information.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Info"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_margin="5dp"
+        android:hint="Current Age" />
+
+    <EditText
+        android:id="@+id/editTextCurSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/editTextAge"
+        android:hint="Current Salary" />
+
+    <EditText
+        android:id="@+id/editTextRetAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/editTextCurSalary"
+        android:hint="Retirement Age" />
+
+    <EditText
+        android:id="@+id/editTextAvgIncrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/editTextRetAge"
+        android:hint="Average Annual Increment" />
+
+    <!-- Add other EditText fields for age, retirement age, etc. -->
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAvgIncrement"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:text="UPDATE" />
+
+    <TextView
+        android:id="@+id/textViewResult_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSave"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult_Name"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult_Salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult_Age"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult_RetAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult_Salary"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult_AvgIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult_RetAge"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_chartActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult_AvgIncrement"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:text="Chart Load" />
+
+
+</RelativeLayout>
